@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "<TASK_DEFINITION>"
+        TaskDefinition: "bg-app-td"
         LoadBalancerInfo:
-          ContainerName: "app-task-container"
+          ContainerName: "bg-app"
           ContainerPort: 80
