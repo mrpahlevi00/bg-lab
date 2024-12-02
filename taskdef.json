@@ -1,7 +1,7 @@
 {
   "containerDefinitions": [
     {
-      "name": "app-task-container",
+      "name": "bg-app",
       "image": "REPOSITORY_URI:IMAGE_TAG",
       "portMappings": [
         {
@@ -11,13 +11,13 @@
       ],
       "essential": true,
       "dockerLabels": {
-        "name": "app-task-container"
+        "name": "bg-app"
       },
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/app-logs",
-          "awslogs-region": "us-east-1",
+          "awslogs-group": "/aws/ecs-services/bg-app",
+          "awslogs-region": "ap-southeast-1",
           "awslogs-stream-prefix": "ecs"
         }
       }
@@ -25,7 +25,7 @@
   ],
   "taskRoleArn": "TASK_EXECUTION_ARN",
   "executionRoleArn": "TASK_EXECUTION_ARN",
-  "family": "app-task-def",
+  "family": "bg-app",
   "networkMode": "awsvpc",
   "requiresCompatibilities": [
     "EC2"
