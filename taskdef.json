@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "bg-app",
-      "image": "IMAGE_NAME",
+      "image": "REPOSITORY_URI:IMAGE_TAG",
       "portMappings": [
         {
           "containerPort": 80,
