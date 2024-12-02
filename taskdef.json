@@ -23,13 +23,13 @@
       }
     }
   ],
-  "taskRoleArn": "TASK_EXECUTION_ARN",
-  "executionRoleArn": "TASK_EXECUTION_ARN",
+  "taskRoleArn": "arn:aws:iam::339712808680:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::339712808680:role/ecsTaskExecutionRole",
   "family": "bg-app",
   "networkMode": "awsvpc",
   "requiresCompatibilities": [
     "EC2"
   ],
-  "cpu": 1024,
+  "cpu": 512,
   "memory": 1024
 }
